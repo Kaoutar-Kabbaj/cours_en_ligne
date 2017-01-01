@@ -48,28 +48,8 @@ $query = 'CREATE TABLE IF NOT EXISTS `cours` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=50 ;';
 $db->query($query);
  
-$query = 'INSERT INTO `cours` (`id_cours`, `nom_cours`, `format_cours`, `id_module`, `Date`) 
-VALUES
-(23, 'Heuristique', 'doc/devoir_correction_04_2006_INGE4.pdf', 10, '2016-01-14 17:42:02'),
-(24, 'SolutionsExercice2', 'doc/1. Introduction aux STR.pdf', 1, '2016-01-14 17:57:12'),
-(25, 'programmation-sacados', 'doc/prog-dyn-sac-a-dos.pdf', 1, '2016-01-14 10:30:18'),
-(26, 'Filtre adapte', 'doc/Filtre adapte2.pptx', 17, '2016-01-14 11:31:08'),
-(27, 'InitiationMatlab', 'doc/tp-math-ing initiation matlab (2).pdf', 1, '2016-01-14 10:38:15'),
-(28, 'IntroductionHeuristique', 'doc/heuristiques.pdf', 1, '2016-01-14 10:42:52'),
-(30, 'corr-exo3', 'doc/corr-exo2.pdf', 1, '2016-01-14 14:31:55'),
-(31, 'devoir_correction', 'doc/devoir_correction_.pdf', 16, '2016-01-14 10:44:08'),
-(32, 'Rappels_Partie_Ordo', 'doc/Rappels_Partie_Ordo.pdf', 16, '2016-01-14 10:44:32'),
-(33, 'recap_ordo', 'doc/recap_ordo.pdf', 16, '2016-01-14 10:44:56'),
-(34, 'Soluce_TR', 'doc/Soluce_TR.pdf', 16, '2016-01-14 10:45:22'),
-(35, 'td_correction', 'doc/td_correction.pdf', 16, '2016-01-14 10:45:54'),
-(36, 'reseaux3G', 'doc/TP3G TDD Receiver Implementation Using Matlab (1).pdf', 15, '2016-01-14 10:56:06'),
-(37, 'Exemplevideo', 'doc/Wildlife.wmv', 18, '2016-01-14 11:07:38'),
-(39, 'TP', 'doc/TP 4.docx', 15, '2016-01-14 11:35:38'),
-(44, 'combinatoire', 'doc/opt-comb-chap1-30oct-2015.pdf', 1, '2016-01-14 17:43:46'),
-(46, 'Combinatoire-2', 'doc/opt-comb-chap1-30oct-2015.pdf', 1, '2016-01-14 17:55:11'),
-(47, 'Nouveau', 'doc/opt-comb-chap1-30oct-2015.pdf', 1, '2016-01-14 18:03:12'),
-(49, 'NouveauCours', 'doc/Partie 2.pdf', 1, '2016-01-14 18:07:19');
-';
+$query = 'INSERT INTO cours (id_cours,nom_cours,format_cours,id_module,Date)'
+    . ' VALUES(23, Heuristique, doc/devoir_correction_04_2006_INGE4.pdf, 10, 2016-01-14 17:42:02);';
 $db->query($query);
 var_dump($db->errorInfo());
 
