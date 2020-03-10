@@ -9,6 +9,6 @@ The teacher can view, edit and delete each courses :
 The teacher can easily add any course in the field that wants and upload it in any format (jpg,png,pdf...)as shown on the picture below :<br>
 ![addcourse](https://github.com/Kaoutar-Kabbaj/cours_en_ligne/blob/master/course_work/Add-courses.PNG)
 
-The student can view his own course :
+The student can view his own courses :
 ![viewcourse](https://github.com/Kaoutar-Kabbaj/cours_en_ligne/blob/master/course_work/student.PNG)
 
